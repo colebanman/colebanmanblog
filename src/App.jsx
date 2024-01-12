@@ -25,7 +25,7 @@ function Posts() {
           return { name, date, title };
         })
       );
-      setPostsData(posts);
+      setPostsData(posts.reverse()); // Reverse so newest posts are first
     };
 
     loadPostsData();
@@ -33,15 +33,15 @@ function Posts() {
 
   return (
     <div className="w-4/5">
-      {postsData.map(({ name, date, title }) => (
-        <>
+      {postsData.map(({ name, date, title }, index) => (
+        <div key={index}>
           <Link to={`/posts/${name}`} className="link">
             {title}
           </Link>
           <h1 className='text-sm'>
             {date}
           </h1>
-        </>
+        </div>
       ))}
     </div>
   );

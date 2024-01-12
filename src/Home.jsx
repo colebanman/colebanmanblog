@@ -11,7 +11,7 @@ export default function Home(){
             </h2>
 
             <h2 className="font-medium text-md mt-4">
-                I'm currently a student at Amador Valley High School,
+                I'm currently a high school student in California,
                 and I'm interested in pursuing a career in cyber security.
                 This is a work-in-progress blog, so expect to see more soon.
             </h2>

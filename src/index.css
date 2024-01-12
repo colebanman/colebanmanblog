@@ -10,7 +10,7 @@
     @apply mr-4 text-blue-600 hover:text-blue-800 transition-all duration-200
   }
   .heading {
-    @apply font-black text-4xl mt-4 text-gray-200
+    @apply font-black text-4xl mt-4 text-gray-200 border-t-2 border-gray-200 pt-4 border-dashed border-opacity-80
   }
   .paragraph {
     @apply text-gray-400
