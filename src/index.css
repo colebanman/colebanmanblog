@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply transition-all duration-300 font-mono
+  }
+  .link {
+    @apply mr-4 text-blue-600 hover:text-blue-800 transition-all duration-200
+  }
+  .heading {
+    @apply font-black text-4xl mt-4 text-gray-200
+  }
+  .paragraph {
+    @apply text-gray-400
+  }
+}
