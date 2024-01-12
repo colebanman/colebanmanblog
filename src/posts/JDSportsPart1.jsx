@@ -81,8 +81,22 @@ export default function JDSports(){
             </h2>
             <img src={jdsports2} alt="Frida in Command Line" className="w-3/4 mt-2 shadow-xl rounded-sm"/>
 
+            <h1 className="heading">Finding the API</h1>
+            <h2 className="paragraph mt-4">
+                Now that we can see the requests that the app is making, we can start to look for the API. After finding an in-store mode that could scan products,
+                I was able to see a request that the app was making to the server. This request was a POST request to the URL seen below.
+                <br/>
+                <Link className="link" target={"_blank"} to="https://prodmobloy2.jdsports.com/api/StoreMode/GetProductDetail"> https://prodmobloy2.jdsports.com/api/StoreMode/GetProductDetail</Link>
+                <br/>
+                
+                Body:
+                {`{"storeNumber": "...", "upc": "..."}`}
+            </h2>
+
+            <h1 className="heading">See Pt 2</h1>
+
             
         </div>
     
     )
-    }
+}
