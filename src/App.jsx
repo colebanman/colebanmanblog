@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 // Get all posts from the posts folder
 const postImports = import.meta.glob('./posts/*.jsx');
@@ -49,6 +50,8 @@ function Posts() {
 function App() {
   return (
     <BrowserRouter>
+    <Analytics />
+
       <div className='w-full h-screen absolute'>
         <header className='ml-16 mt-16 flex flex-col'>
           <h1>c.banman blog</h1>
