@@ -39,9 +39,6 @@ function Posts() {
           <Link to={`/posts/${name}`} className="link">
             {title}
           </Link>
-          <h1 className='text-sm'>
-            {date}
-          </h1>
         </div>
       ))}
     </div>
