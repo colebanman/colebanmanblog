@@ -74,7 +74,7 @@ function App() {
 
               
         <footer className='ml-16 mt-16 flex flex-col'>
-          <Link to='/' className='link'>c.banman blog - 2023</Link>
+          <Link to='/' className='link'>c.banman blog - 2024</Link>
         </footer>
 
       </div>
