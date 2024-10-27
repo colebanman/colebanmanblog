@@ -5,7 +5,7 @@ import jdsports2 from "../assets/jdsports2.png"
 
 export const postMetadata = {
     title: "Creating a Javascript Obfuscator",
-    date: "January 10, 2023",
+    date: "January 10, 2024",
     author: "Cole Banman",
 }
 export default function JSObfuscator(){
